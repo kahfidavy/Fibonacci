@@ -14,7 +14,7 @@ import java.util.Scanner;
  */
 public class Data {
     int masukan;
-    int awal=0;
+    int awal=1;
     int nilaiawal=1;
     int nilai=0;
     int n=0;
