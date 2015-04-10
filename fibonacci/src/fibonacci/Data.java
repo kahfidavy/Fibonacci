@@ -14,10 +14,11 @@ import java.util.Scanner;
  */
 public class Data {
     int masukan;
-    int awal=0;
+    int awal=1;
     int nilaiawal=1;
     int nilai=0;
     int n=0;
+    int modif=1;
     Scanner input = new Scanner( System.in );
     public Data(){
     }
@@ -28,14 +29,17 @@ public class Data {
     }
     
     public void output(){
-        System.out.print("1 ");
+        //System.out.print("1 ");
         while(masukan>awal){
             nilai=nilaiawal+n;
             n=nilaiawal;
             nilaiawal=nilai;
+            modif=nilai+modif;
             awal++;
-            System.out.print(nilai+" ");
+            //System.out.print(nilai+" ");
         }
+        System.out.println("");
+        System.out.println(modif);
     }
     
 }
